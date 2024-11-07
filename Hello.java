@@ -9,6 +9,12 @@ public class Hello {
         String user = "root"; // Sesuaikan dengan user database Anda
         String password = ""; // Sesuaikan dengan password database Anda
 
+        if (args.length == 3) {
+            url = args[0];
+            user = args[1];
+            password = args[2];
+        }
+
         while (true) {
             try (Connection connection = DriverManager.getConnection(url, user, password)) {
                 System.out.println("berhasil");
