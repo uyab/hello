@@ -5,7 +5,7 @@ import java.sql.SQLException;
 public class Hello {
     public static void main(String[] args) {
         // Konfigurasi koneksi database
-        String url = "jdbc:mysql://localhost:3308/ekatalog"; // Sesuaikan dengan URL database Anda
+        String url = "jdbc:mariadb://localhost:3308/ekatalog"; // Sesuaikan dengan URL database Anda
         String user = "root"; // Sesuaikan dengan user database Anda
         String password = ""; // Sesuaikan dengan password database Anda
 
